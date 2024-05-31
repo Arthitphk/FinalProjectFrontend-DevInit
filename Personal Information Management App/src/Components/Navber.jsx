@@ -36,6 +36,7 @@ const Navber = () => {
             <ul className="hidden md:flex space-x-4">
                 <li><a href="/Home" className="dark:text-white font-bold dark:hover:text-teal-500">Home</a></li>
                 <li><a href="/Todo" className="dark:text-white font-bold dark:hover:text-teal-500">Todo-List</a></li>
+                <li><a href="/Note" className="dark:text-white font-bold dark:hover:text-teal-500">Note</a></li>
                 
             </ul>
         </div>
@@ -44,6 +45,8 @@ const Navber = () => {
           <ul className="flex-col md:hidden">
             <li className="py-3"><a href="/Home" className="dark:text-white font-bold dark:hover:text-teal-500">Home</a></li>
             <li className="py-3"><a href="/Todo" className="dark:text-white font-bold dark:hover:text-teal-500">Todo-List</a></li>
+            <li className="py-3"><a href="/Note" className="dark:text-white font-bold dark:hover:text-teal-500">Note</a></li>
+            
             
         </ul>
         ) : null}
