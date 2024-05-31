@@ -3,10 +3,12 @@ import { useState } from "react";
 import CustomForm from './CustomForm';
 import TaskList from './TaskList'
 import EditForm from './EditForm';
+import useLocalStoreage from '../../Hook/useLocalStoreage';
+
 
 const Todowrapper = () => {
 
-    const [tasks, setTasks] = useState([]);
+    const [tasks, setTasks] = useLocalStoreage('react-todo', []);
     const [editTask, setEditTask] = useState(null);
     const [isEdit, setIsEdit] = useState(false);
 
