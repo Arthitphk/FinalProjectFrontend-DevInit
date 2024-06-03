@@ -39,9 +39,10 @@ const Calendarapp = () => {
           events={event}
           startAccessor="start"
           endAccessor="end"
-          style={{ height: 1000 }}
+          style={{ height: 'calc(80vh - 80px)', width: '100%'}}
           selectable={true}
           onSelectSlot={handleSelect}
+          
       />
       {showModal && (
             <div  className="fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full ">

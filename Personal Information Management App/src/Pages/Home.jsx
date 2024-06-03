@@ -1,8 +1,6 @@
 import React from 'react'
 import Navber from '../Components/Navber'
 import Calendarapp from '../Components/Calendarapp'
-
-
 const Home = () => {
   return (
     <div>

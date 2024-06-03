@@ -12,12 +12,12 @@ const TaskItem = ({ task, deleteTask, enterEditMode }) => {
             </label>
         </div>
 
-        <div className='p-5'>
-            <button  onClick={() => enterEditMode(task)} className='hover:text-red-700 p-3 bg-black mr-5 text-white rounded-lg'>
+        <div className='p-5 flex gap-2'>
+            <button  onClick={() => enterEditMode(task)} className='flex justify-center items-center gap-2 w-28 h-12 cursor-pointer rounded-md shadow-2xl text-white font-semibold bg-gradient-to-r from-[#5e5557] via-[#020101] to-[#5e5557] hover:shadow-xl hover:shadow-gray-600 hover:scale-105 duration-300 hover:from-[#5e5557] hover:to-[#5e5557]'>
               <BorderColorIcon  width={24} height={24} />
             </button>
 
-            <button onClick={() => deleteTask(task.id)}  className=' p-3 bg-red-700 text-white rounded-lg'>
+            <button onClick={() => deleteTask(task.id)}  className=' flex justify-center items-center gap-2 w-28 h-12 cursor-pointer rounded-md shadow-2xl text-white font-semibold bg-gradient-to-r from-[#fb7185] via-[#e11d48] to-[#be123c] hover:shadow-xl hover:shadow-red-500 hover:scale-105 duration-300 hover:from-[#be123c] hover:to-[#fb7185]'>
               <DeleteIcon  width={24} height={24} />
             </button>
         </div>
