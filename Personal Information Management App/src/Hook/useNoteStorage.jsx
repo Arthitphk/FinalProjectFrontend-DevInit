@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 
-const useLocalStoreage = (key, defaultvalue) => {
+const useNoteStorage = (key, defaulNotetvalue) => {
     const [value, setValue] = useState(() => {
       try {
         const localValue = window.localStorage.getItem(key);
-        return localValue ? JSON.parse(localValue) : defaultvalue;
+        return localValue ? JSON.parse(localValue) : defaulNotetvalue;
       } catch (err) {
         console.log(err);
-        return defaultvalue
+        return defaulNotetvalue
       }
       
     })
@@ -21,4 +21,4 @@ const useLocalStoreage = (key, defaultvalue) => {
   
 }
 
-export default useLocalStoreage
+export default useNoteStorage
