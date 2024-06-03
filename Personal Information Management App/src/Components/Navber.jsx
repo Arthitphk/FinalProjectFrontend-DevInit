@@ -46,8 +46,6 @@ const Navber = () => {
             <li className="py-3"><a href="/Home" className="dark:text-white font-bold dark:hover:text-teal-500">Home</a></li>
             <li className="py-3"><a href="/Todo" className="dark:text-white font-bold dark:hover:text-teal-500">Todo-List</a></li>
             <li className="py-3"><a href="/Note" className="dark:text-white font-bold dark:hover:text-teal-500">Note</a></li>
-            
-            
         </ul>
         ) : null}
   </nav>
