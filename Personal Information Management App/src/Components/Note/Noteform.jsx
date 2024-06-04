@@ -23,7 +23,7 @@ const Noteform = ({ addNote }) => {
     <div className='container mx-auto'>
       <div className='flex justify-center mt-10'>
           <div className=''>
-            <h1 className='font-bold text-[100px] dark:text-white'>Daily Note</h1>
+            <h1 className='font-bold lg:text-[100px] sm:text-6xl sm:text-wrap dark:text-white'>Daily Note</h1>
           </div>
           <div className=''>
             <button onClick={() => setModal(true)} className='cursor-pointer bg-gray-800 dark:bg-white px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none'>

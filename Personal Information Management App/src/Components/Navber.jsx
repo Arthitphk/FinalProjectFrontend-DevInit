@@ -10,7 +10,7 @@ const Navber = () => {
     }
 
   return (
-    <nav className="p-4  bg-white dark:bg-gray-800">
+    <nav className="p-4  bg-white dark:bg-gray-800 drop-shadow-lg">
         <div className="flex  justify-between container mx-auto">
             <div className="text-black text-2xl font-bold dark:text-white ">My
             <span className="text-red-500">App</span>
