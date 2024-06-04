@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import Theme from './Theme';
 
 
 const Navber = () => {
@@ -10,10 +10,10 @@ const Navber = () => {
     }
 
   return (
-    <nav className="p-4  bg-white">
+    <nav className="p-4  bg-white dark:bg-gray-800">
         <div className="flex  justify-between container mx-auto">
-            <div className="text-black text-2xl font-bold ">Coding
-            <span className="text-teal-500">WithMe</span>
+            <div className="text-black text-2xl font-bold dark:text-white ">My
+            <span className="text-red-500">App</span>
             </div>
 
             <div className="md:hidden">
@@ -35,18 +35,18 @@ const Navber = () => {
 
 
             <ul className="hidden md:flex space-x-4">
-                <li><a href="/Home" className="text-black font-bold dark:hover:text-teal-500">Home</a></li>
-                <li><a href="/Todo" className="text-black font-bold dark:hover:text-teal-500">Todo-List</a></li>
-                <li><a href="/Note" className="text-black font-bold dark:hover:text-teal-500">Note</a></li>
-                
+                <li><a href="/Home" className="text-black font-bold dark:text-white">Home</a></li>
+                <li><a href="/Todo" className="text-black font-bold dark:text-white">Todo-List</a></li>
+                <li><a href="/Note" className="text-black font-bold dark:text-white">Note</a></li>
+                <Theme />
             </ul>
         </div>
 
         {open ? (
           <ul className="flex-col md:hidden">
-            <li className="py-3"><a href="/Home" className="text-black font-bold dark:hover:text-teal-500">Home</a></li>
-            <li className="py-3"><a href="/Todo" className="text-black font-bold dark:hover:text-teal-500">Todo-List</a></li>
-            <li className="py-3"><a href="/Note" className="text-black font-bold dark:hover:text-teal-500">Note</a></li>
+            <li className="py-3"><a href="/Home" className="text-black font-bold dark:text-white">Home</a></li>
+            <li className="py-3"><a href="/Todo" className="text-black font-bold dark:text-white">Todo-List</a></li>
+            <li className="py-3"><a href="/Note" className="text-black font-bold dark:text-white">Note</a></li>
         </ul>
         ) : null}
   </nav>

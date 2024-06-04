@@ -5,7 +5,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 
 const TaskItem = ({ task, deleteTask, enterEditMode }) => {
   return (
-    <li className="flex items-center mt-5 justify-between gap-[.6em] text-lg border-2 border-black rounded-lg">
+    <li className="flex items-center mt-5 justify-between gap-[.6em] text-lg border-2 border-black dark:border-white rounded-lg dark:bg-white" >
         <div className='p-5 relative'>
             <label htmlFor={task.id} className="ml-5">
               {task.name}

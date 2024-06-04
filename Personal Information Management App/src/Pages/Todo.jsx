@@ -14,7 +14,7 @@ const Todo = () => {
       </header>
       <main>
         <div>
-          <h1 className='font-bold text-[40px] text-center m-10'>To-Do List</h1>
+          <h1 className='font-bold text-[40px] text-center m-10 dark:text-white'>To-Do List</h1>
           <Todowrapper/>
         </div>
       </main>
