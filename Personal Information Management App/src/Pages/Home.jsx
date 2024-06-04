@@ -1,13 +1,16 @@
 import React from 'react'
 import Navber from '../Components/Navber'
-import Calendarapp from '../Components/Calendarapp'
+import Content from '../Components/Content'
+import Footer from '../Components/Footer'
+
+
+
 const Home = () => {
   return (
     <div>
       <Navber/>
-      <div className='container mx-auto mt-[50px]'>
-        <Calendarapp />
-      </div>
+      <Content/>
+      <Footer />
     </div>
     
   )

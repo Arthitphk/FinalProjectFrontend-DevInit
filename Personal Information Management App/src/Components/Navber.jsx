@@ -10,7 +10,7 @@ const Navber = () => {
     }
 
   return (
-    <nav className="p-4  bg-white dark:bg-gray-800 drop-shadow-lg">
+    <nav className="p-4  bg-white dark:bg-gray-900 drop-shadow-lg">
         <div className="flex  justify-between container mx-auto">
             <div className="text-black text-2xl font-bold dark:text-white ">My
             <span className="text-red-500">App</span>
@@ -38,6 +38,7 @@ const Navber = () => {
                 <li><a href="/Home" className="text-black font-bold dark:text-white">Home</a></li>
                 <li><a href="/Todo" className="text-black font-bold dark:text-white">Todo-List</a></li>
                 <li><a href="/Note" className="text-black font-bold dark:text-white">Note</a></li>
+                <li><a href="/Calendar" className="text-black font-bold dark:text-white">Calendar</a></li>
                 <Theme />
             </ul>
         </div>
@@ -47,6 +48,8 @@ const Navber = () => {
             <li className="py-3"><a href="/Home" className="text-black font-bold dark:text-white">Home</a></li>
             <li className="py-3"><a href="/Todo" className="text-black font-bold dark:text-white">Todo-List</a></li>
             <li className="py-3"><a href="/Note" className="text-black font-bold dark:text-white">Note</a></li>
+            <li className="py-3"><a href="/Calendar" className="text-black font-bold dark:text-white">Calendar</a></li>
+            
         </ul>
         ) : null}
   </nav>
